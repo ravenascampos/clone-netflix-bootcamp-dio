@@ -1,0 +1,340 @@
+/*variáveis*/
+:root {
+  /*cores texto*/
+  --title: #e5e5e5;
+  --title-menu-hover: #b3b3b3
+  --text: #ffffff;
+}
+/*base*/
+html {
+  scroll-behavior: smooth;
+}
+/*resets*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Martel Sans', sans-serif;
+}
+
+/*background destaque*/
+.bg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+  background: url(/img/one-piece-4.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+/*cabeçalho*/
+header {
+  width: 100%;
+  background-color: #141414;
+}
+
+header .container {
+  padding: 0 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-netflix-logo {
+  font-size: 60px;
+  font-weight: 700;
+}
+/*menu*/
+nav .menu a{
+margin-left: 20px;
+font-size: 12px;
+font-weight: 700;
+transition: color 0.4s;
+text-decoration: none;
+color: var(--title);
+}
+
+nav .menu a:hover {
+color: #b3b3b3;
+}
+
+/*destaque*/
+.principal-film {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principal-film .container {
+  width: 80%;
+}
+
+.icon-netflix {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.icon-netflix h2 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #141414;  
+}
+
+.logo-one-piece {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.synopsis {
+  display: flex;
+  justify-content: flex-start;
+  color: #141414;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: justify;
+  font-weight: bolder;
+}
+
+.buttons i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.button-play {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  color: #141414;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.button-play:hover {
+  background-color: #b3b3b3;
+}
+
+.button-info {
+  background-color: #6d6d6eb3;
+  border: none;
+  border-radius: 4px;
+
+  padding: 8px 20px;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.button-info:hover {
+  background-color: #b3b3b3;
+}
+
+/*carousel*/
+#continue {
+  background-color: #141414;
+  color: var(--title);
+  font-size: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.box-film {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title-section {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+/*footer*/
+footer {
+  background-color: #141414;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .social{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;  
+}
+
+footer .social a {
+  color: #808080;
+  text-decoration: none;
+}
+
+footer .informations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 0 14px;
+}
+
+footer .informations a {
+  margin: 0 0 16px;
+  text-decoration: none;
+  color: #808080;
+  font-size: 12px;
+}
+
+footer .informations a:hover {
+  color: #ffffff;
+}
+
+footer .button-service {
+  background-color: transparent;
+  border: 1px solid #808080;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  color: #808080;
+  font-size: 12px;
+
+}
+
+.button-service:hover {
+  color: #ffffff;
+}
+
+footer p {
+  color: #808080;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 425px) {
+  
+  header .container {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .icon-netflix-logo {
+    font-size: 40px;
+  }
+ 
+  nav .menu a{
+  margin-left: 10px;
+  font-size: 10px;
+  }
+ 
+  .principal-film {
+    padding-left: 10px;
+  }
+    
+  .icon-netflix {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .synopsis {
+    width: 40%;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .box-film {
+    margin-left: 10px;
+  }
+
+  .title-section {
+    margin-left: 10px;
+  }
+
+  .buttons i {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  
+  .button-play {
+    padding: 3.8px 11.5px 3.8px 9.6px;
+    margin: 0 4.8px 4.8px 0;
+    font-size: 10px;
+  }
+  
+  .button-info {
+    padding: 3.8px 11.5px 3.8px 9.6px;
+    margin: 0 4.8px 4.8px 0;
+    font-size: 10px;
+  }
+  
+  #continue {
+  font-size: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer .social{
+  margin: 0 0 4.8px;
+}
+
+footer .social a {
+  margin: 0 15px 0 0;
+}
+
+footer .informations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 14px;
+}
+
+footer .informations a {
+  margin: 0 0 16px;
+}
+
+footer .informations a:hover {
+  color: #ffffff;
+}
+
+footer .button-service {
+  padding: 6.5px;
+  margin: 0 0 20;
+}
+}

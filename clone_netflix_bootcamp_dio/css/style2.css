@@ -1,0 +1,143 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+  background: #141414;
+}
+
+/*cabeçalho*/
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*alinha vertical*/
+  justify-content: space-between; /*alinha horizontal*/
+}
+
+/*Navigation*/
+nav {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e5e5e5;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+header nav a:hover {
+  color: #b3b3b3;
+}
+
+.icon-netflix-logo {
+  font-size: 50px;
+  margin-left: 5px;
+}
+
+/*publicação principal*/
+
+.principal-film {
+  /*background*/
+
+
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principal-film .container {
+  width: 80%;
+}
+
+.icon-netflix {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.icon-netflix h5 {
+  margin-left: 5px;
+  color: #e5e5e5;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.logo-one-piece {
+  margin-top: 10px;
+  width: 40%;
+}
+
+.synopsis {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  letter-spacing: 0.7px;
+  text-align: justify;
+}
+
+.buttons i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.button-play {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  color: #141414;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.button-play:hover {
+  background-color: #b3b3b3;
+}
+
+.button-info {
+  background-color: #6d6d6eb3;
+  border: none;
+  border-radius: 4px;
+
+  padding: 8px 20px;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.button-info:hover {
+  background-color: #b3b3b3;
+}
+
+.box-film {
+  width: 50%;
+  display: block;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 884px) {
+  header .container {
+
+  }
+}

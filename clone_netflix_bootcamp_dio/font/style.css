@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'font';
+  src:  url('fonts/font.eot?5dxlie');
+  src:  url('fonts/font.eot?5dxlie#iefix') format('embedded-opentype'),
+    url('fonts/font.ttf?5dxlie') format('truetype'),
+    url('fonts/font.woff?5dxlie') format('woff'),
+    url('fonts/font.svg?5dxlie#font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play_arrow_black_24dp:before {
+  content: "\e900";
+}
+.icon-info_black_24dp:before {
+  content: "\e901";
+}
+.icon-netflix-logo:before {
+  content: "\e905";
+  color: #d81f26;
+}
